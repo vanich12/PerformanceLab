@@ -18,12 +18,12 @@ namespace Task2
             }
 
 
-            string path1 = args[0];
-            string path2 = args[1];
-
             string[] circleLines;
             try
             {
+                string path1 = args[0];
+                string path2 = args[1];
+
                 circleLines = File.ReadAllLines(path1);
                 var centerCircle = circleLines[0].Split(' ');
                 var radiusCircle = double.Parse(circleLines[1]);
